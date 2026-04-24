@@ -746,3 +746,69 @@ header {
     color: rgb(4, 66, 109); 
     letter-spacing: 1px;
 }
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px;
+  padding: 20px;
+}
+@media (max-width: 992px) {
+  .features-container {
+    grid-template-columns: repeat(2, 1fr); /* tablet */
+  }
+}
+
+@media (max-width: 576px) {
+  .features-container {
+    grid-template-columns: 1fr; /* mobile */
+  }
+}
+.feature-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.registration {
+  padding: 30px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+#why-choose-us {
+  padding: 50px 20px;
+}
+
+#why-choose-us h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#why-choose-us p {
+  margin-bottom: 30px;
+  color: #555;
+}
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto; /* centers everything */
+}
+.registration + #why-choose-us {
+  margin-top: 40px;
+}
+#why-choose-us h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+#why-choose-us p {
+  text-align: center;
+}
